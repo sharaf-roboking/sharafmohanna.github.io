@@ -266,396 +266,383 @@
                 <p class="text-gray-400 max-w-2xl mx-auto">A selection of my work in autonomous systems, computer vision, and robotic manipulation.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="space-y-10">
 
-                <!-- Autonomous Aircraft Inspection Robot -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/aircraft-inspection.jpg" alt="Autonomous Aircraft Inspection Robot" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-blue-600/80 backdrop-blur rounded-full text-xs font-medium">ROS 2</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-blue-400 transition">Autonomous Aircraft Inspection Robot</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            ROS 2-based inspection robot for aircraft wings and stabilisers on a Husarion Panther UGV with a custom telescoping camera column. 3D LiDAR, 2D LiDAR and stereo vision with hybrid SLAM (RTAB-Map &amp; SLAM Toolbox) and Nav2 for GPS-denied hangars, validated in Gazebo.
+                <!-- 1. Autonomous Mobile Robot for Aircraft Inspection -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-blue-400">1.</span> Autonomous Mobile Robot for Aircraft Inspection</h3>
+                        <p class="text-xs text-blue-400 font-medium mb-3 uppercase tracking-wider">MSc Thesis &middot; Cranfield University</p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Developed a ROS 2-based autonomous inspection robot for aircraft wings and stabilisers using the Husarion Panther UGV with a custom telescoping camera column. Integrated 3D LiDAR, 2D LiDAR and stereo vision for mapping and navigation in GPS-denied hangars. Implemented hybrid SLAM (RTAB-Map &amp; SLAM Toolbox) and Nav2 for autonomous path planning and obstacle avoidance, validated in Gazebo with accurate localisation, safe vertical inspection control and efficient defect imaging.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS 2</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SLAM</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">LiDAR</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Nav2</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Gazebo</span>
                         </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=CNA5btSTevw" target="_blank" rel="noopener" class="text-blue-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            <span class="text-xs text-gray-500">MSc Thesis</span>
-                        </div>
                     </div>
-                </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="CNA5btSTevw" aria-label="Play video: Autonomous Mobile Robot for Aircraft Inspection">
+                            <img src="images/aircraft-inspection.jpg" alt="Autonomous Mobile Robot for Aircraft Inspection" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-blue-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
 
-                <!-- Generalised Anomaly Detection System -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/anomaly-detection.jpg" alt="Generalised Anomaly Detection System" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-purple-600/80 backdrop-blur rounded-full text-xs font-medium">AI/ML</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-purple-400 transition">Generalised Anomaly Detection System</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Real-time anomaly detection on a mobile robot for public safety in places like shopping centres. Detects fallen people, abandoned bags and visible knives using YOLO-World v2, YOLO-Pose and GPT-4V for contextual reasoning and JSON alerts.
+                <!-- 2. Generalised Anomaly Detection System -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-purple-400">2.</span> Generalised Anomaly Detection System</h3>
+                        <p class="text-xs text-purple-400 font-medium mb-3 uppercase tracking-wider">Published at IEEE ICAC 2025</p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Integrated real-time anomaly detection into a mobile robot to enhance public safety in dynamic environments such as shopping centres. Targets three anomalies: people who have fallen, abandoned bags and visible knives. The final pipeline combines YOLO-World v2 for open-vocabulary detection, YOLO-Pose for posture estimation and GPT-4V for contextual reasoning with JSON-formatted alerts.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">YOLO</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">YOLO-World</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">YOLO-Pose</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">GPT-4V</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Pose Estimation</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=M5GraIliF5Y" target="_blank" rel="noopener" class="text-purple-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            <span class="text-xs text-gray-500">IEEE ICAC 2025</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS</span>
                         </div>
                     </div>
-                </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="M5GraIliF5Y" aria-label="Play video: Generalised Anomaly Detection System">
+                            <img src="images/anomaly-detection.jpg" alt="Generalised Anomaly Detection System" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-purple-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
 
-                <!-- MANNA Navigation Project -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&amp;q=80" alt="MANNA Navigation Project" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-green-600/80 backdrop-blur rounded-full text-xs font-medium">Research</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-green-400 transition">MANNA Navigation Project</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Maritime Autonomous Navigation using Alternative Absolute Positioning. Developing star and sun-sensor based positioning for GNSS-denied environments with Unity simulation and multi-sensor fusion.
+                <!-- 3. Vision-Based Object Measurement System -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-orange-400">3.</span> Vision-Based Object Measurement System</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            C++ and OpenCV system that detects and measures objects in real time with a standard camera, using a &pound;1 coin (23.43 mm) as a reference for automatic calibration. Converts pixel measurements into real-world units, removing the need for calipers or contact sensors, and is robust to varying lighting and object orientation for industrial quality control.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Celestial Nav</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Unity</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Sensor Fusion</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <span></span>
-                            <span class="text-xs text-gray-500">Ongoing</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Vision-Based Measurement System -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/vision-measurement.jpg" alt="Vision-Based Measurement System" loading="lazy" class="project-image w-full h-full object-cover object-left opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-orange-600/80 backdrop-blur rounded-full text-xs font-medium">OpenCV</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-orange-400 transition">Vision-Based Measurement System</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            C++ and OpenCV system that measures objects in real time using a &pound;1 coin (23.43 mm) for automatic calibration. Converts pixels to real-world units, robust to lighting and orientation, for manufacturing quality control.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">C++</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">OpenCV</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Computer Vision</span>
                         </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <span></span>
-                            
+                    </div>
+                    <div>
+                        <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800">
+                            <img src="images/vision-measurement.jpg" alt="Vision-Based Object Measurement System" loading="lazy" class="w-full h-full object-cover object-left">
                         </div>
                     </div>
-                </div>
+                    </div>
+                </article>
 
-                <!-- Automotive Engine Deburring Cell -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/engine-deburring.jpg" alt="Automotive Engine Deburring Cell" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-red-600/80 backdrop-blur rounded-full text-xs font-medium">ABB</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-red-400 transition">Automotive Engine Deburring Cell</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Industrial robotic cell in ABB RobotStudio for deburring a V8 engine block at a precise 45&deg; tool angle. Custom deburring tool designed in SolidWorks, plus a machine-vision inspection routine for quality feedback.
+                <!-- 4. Design, Implementation and Control of a 3D Printer -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-yellow-400">4.</span> Design, Implementation and Control of a 3D Printer</h3>
+                        <p class="text-xs text-yellow-400 font-medium mb-3 uppercase tracking-wider">BSc Final Year Project</p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Designed, built and controlled a 3D printer from scratch using an Arduino Mega. Fine-tuned the mechanical components to improve accuracy and minimise vibration, and made significant modifications to the open-source Marlin firmware for high print quality. Supervised by Dr. Wafaa Batayneh and fully funded by the Center of Excellence for Innovative Projects at JUST.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">RobotStudio</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Machine Vision</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=kLyX57Rmnwk" target="_blank" rel="noopener" class="text-red-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Aeroengine Case Assembly Cell -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/aeroengine-assembly.jpg" alt="Aeroengine Case Assembly Cell" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-cyan-600/80 backdrop-blur rounded-full text-xs font-medium">ABB</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-cyan-400 transition">Aeroengine Case Assembly Cell</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Automated assembly of a simplified aircraft engine case in ABB RobotStudio: placing the upper case and fastening 48 bolts with M8 nuts. Designed two custom end-effectors for case handling and bolt insertion.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">RobotStudio</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">End-Effector Design</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Automation</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=5yBqg6WofLA" target="_blank" rel="noopener" class="text-cyan-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Camera Robot for Videography -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/camera-robot.jpg" alt="Camera Robot for Videography" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-pink-600/80 backdrop-blur rounded-full text-xs font-medium">UR Robot</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-pink-400 transition">Camera Robot for Videography</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Integrated a Universal Robot into a videography setup for food and product ads. Programmed smooth, precise motion and designed the end-effector in SolidWorks, including simulations and material selection.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Universal Robots</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CAD</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=dbK_TVK39Sk" target="_blank" rel="noopener" class="text-pink-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            <span class="text-xs text-gray-500">The ADY</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UR5 Joystick Control -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/ur5-joystick.jpg" alt="UR5 Joystick Control" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-blue-600/80 backdrop-blur rounded-full text-xs font-medium">ROS 2</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-blue-400 transition">UR5 Joystick Control</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            ROS 2 package for teleoperating a UR5 robot arm with an Xbox controller.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS 2</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">UR5</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Teleoperation</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=KZtcSmzgRvQ" target="_blank" rel="noopener" class="text-blue-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Monocular Visual SLAM Rover -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/vslam-rover.jpg" alt="Monocular Visual SLAM Rover" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-indigo-600/80 backdrop-blur rounded-full text-xs font-medium">SLAM</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-indigo-400 transition">Monocular Visual SLAM Rover</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            As part of the Cranfield Rover Team, helped design the sand-pit test environment and developed visual odometry for the rover using a monocular camera (ORB-SLAM3 in Gazebo).
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ORB-SLAM3</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Visual Odometry</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Gazebo</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=9fvdDGoiNUY" target="_blank" rel="noopener" class="text-indigo-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            <span class="text-xs text-gray-500">Cranfield Rover Team</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ROS-Controlled 3D-Printed Robotic Arm -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/ros-robotic-arm.jpg" alt="ROS-Controlled 3D-Printed Robotic Arm" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-teal-600/80 backdrop-blur rounded-full text-xs font-medium">ROS</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-teal-400 transition">ROS-Controlled 3D-Printed Robotic Arm</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Low-cost robotic arm built from custom 3D-printed parts and servo motors. A ROS node sends joint angles to an Arduino over serial for smooth, coordinated motion.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Arduino</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">3D Printing</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=ucwgOcTD29E" target="_blank" rel="noopener" class="text-teal-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Custom 3D Printer Design -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/3d-printer.jpg" alt="Custom 3D Printer Design" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-yellow-600/80 backdrop-blur rounded-full text-xs font-medium">Hardware</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-yellow-400 transition">Custom 3D Printer Design</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Designed and built a 3D printer from scratch on an Arduino Mega, tuning mechanics to reduce vibration and modifying Marlin firmware for high print quality. Fully funded by the Center of Excellence for Innovative Projects at JUST.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Arduino</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Marlin</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Mechanical Design</span>
                         </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=TLQJycBMjKk" target="_blank" rel="noopener" class="text-yellow-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            <span class="text-xs text-gray-500">BSc Final Year</span>
-                        </div>
                     </div>
-                </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="TLQJycBMjKk" aria-label="Play video: Design, Implementation and Control of a 3D Printer">
+                            <img src="images/3d-printer.jpg" alt="Design, Implementation and Control of a 3D Printer" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-yellow-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
 
-                <!-- Arduino CNC Machine -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/cnc-machine.jpg" alt="Arduino CNC Machine" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-rose-600/80 backdrop-blur rounded-full text-xs font-medium">Hardware</span>
+                <!-- 5. Camera Robot Project -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-pink-400">5.</span> Camera Robot Project</h3>
+                        <p class="text-xs text-pink-400 font-medium mb-3 uppercase tracking-wider">The ADY</p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Integrated a collaborative Universal Robot into a videography setup for high-quality visuals of food and consumer products. Programmed and operated the robot for smooth, precise motion, and designed the end-effector: detailed 3D models, SolidWorks simulations and selection of materials and manufacturing methods.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Universal Robots</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Motion Control</span>
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-rose-400 transition">Arduino CNC Machine</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Designed, built and controlled a fully functional Arduino-driven CNC machine through multiple design and build stages.
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="dbK_TVK39Sk" aria-label="Play video: Camera Robot Project">
+                            <img src="images/camera-robot.jpg" alt="Camera Robot Project" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-pink-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 6. Automotive Engine Deburring System -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-red-400">6.</span> Automotive Engine Deburring System</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Designed an industrial robotic cell in ABB RobotStudio for deburring a V8 engine block, with the tool contacting the edges at a precise 45&deg; angle. Designed the custom deburring tool in SolidWorks and added a machine-vision inspection routine that checks deburred areas and reports potential defects.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ABB RobotStudio</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Machine Vision</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="kLyX57Rmnwk" aria-label="Play video: Automotive Engine Deburring System">
+                            <img src="images/engine-deburring.jpg" alt="Automotive Engine Deburring System" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-red-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 7. Aeroengine Case Assembly Cell -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-cyan-400">7.</span> Aeroengine Case Assembly Cell</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Automated the assembly of a simplified aircraft engine case in ABB RobotStudio: placing the upper case onto the lower case and inserting bolts into 48 holes, each secured with an M8 nut. Engineered two end-effectors, one for handling the heavy case components and one for precise bolt insertion and nut fastening.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ABB RobotStudio</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">End-Effector Design</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Automation</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="5yBqg6WofLA" aria-label="Play video: Aeroengine Case Assembly Cell">
+                            <img src="images/aeroengine-assembly.jpg" alt="Aeroengine Case Assembly Cell" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-cyan-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 8. Control UR5 with Joystick -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-blue-400">8.</span> Control UR5 with Joystick</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Built a ROS 2 package to control the UR5 robot arm using an Xbox joystick.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS 2</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">UR5</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Teleoperation</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="KZtcSmzgRvQ" aria-label="Play video: Control UR5 with Joystick">
+                            <img src="images/ur5-joystick.jpg" alt="Control UR5 with Joystick" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-blue-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 9. VSLAM with a Monocular Camera -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-indigo-400">9.</span> VSLAM with a Monocular Camera</h3>
+                        <p class="text-xs text-indigo-400 font-medium mb-3 uppercase tracking-wider">Cranfield Rover Team</p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            As a member of the Rover Team at Cranfield University, contributed to the design of the sand-pit test environment and developed a visual odometry system for the rover using a monocular (2D) camera.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ORB-SLAM3</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Visual Odometry</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Gazebo</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="9fvdDGoiNUY" aria-label="Play video: VSLAM with a Monocular Camera">
+                            <img src="images/vslam-rover.jpg" alt="VSLAM with a Monocular Camera" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-indigo-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 10. ROS-Controlled 3D-Printed Robotic Arm with Arduino -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-teal-400">10.</span> ROS-Controlled 3D-Printed Robotic Arm with Arduino</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Low-cost robotic arm built entirely from custom 3D-printed parts and servo motors. A ROS node sends joint-angle commands to an Arduino over serial, which drives each motor precisely for smooth, coordinated motion, a foundation for robotic 3D printing, motion planning and education.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Arduino</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">3D Printing</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Servo Control</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="ucwgOcTD29E" aria-label="Play video: ROS-Controlled 3D-Printed Robotic Arm with Arduino">
+                            <img src="images/ros-robotic-arm.jpg" alt="ROS-Controlled 3D-Printed Robotic Arm with Arduino" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-teal-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 11. Design &amp; 3D-Printed Prosthetic Leg -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-emerald-400">11.</span> Design &amp; 3D-Printed Prosthetic Leg</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Designed and 3D printed a prosthetic leg.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CAD</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">3D Printing</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="peEL9-Y7MLA" aria-label="Play video: Design &amp; 3D-Printed Prosthetic Leg">
+                            <img src="images/prosthetic-leg.jpg" alt="Design &amp; 3D-Printed Prosthetic Leg" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-emerald-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 12. Reverse Engineering -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-sky-400">12.</span> Reverse Engineering</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Reverse engineering a physical part into a CAD model in SolidWorks.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CAD</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="JoqXGIfPtzQ" aria-label="Play video: Reverse Engineering">
+                            <img src="images/reverse-engineering.jpg" alt="Reverse Engineering" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-sky-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 13. Design, Build and Control of a CNC -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-rose-400">13.</span> Design, Build and Control of a CNC</h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Went through multiple design and build stages to complete a fully functional CNC machine controlled via Arduino.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Arduino</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CNC</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Stepper Motors</span>
                         </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=OublO1vauMU" target="_blank" rel="noopener" class="text-rose-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            
-                        </div>
                     </div>
-                </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="OublO1vauMU" aria-label="Play video: Design, Build and Control of a CNC">
+                            <img src="images/cnc-machine.jpg" alt="Design, Build and Control of a CNC" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
 
-                <!-- 3D-Printed Prosthetic Leg -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/prosthetic-leg.jpg" alt="3D-Printed Prosthetic Leg" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-emerald-600/80 backdrop-blur rounded-full text-xs font-medium">Design</span>
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-emerald-400 transition">3D-Printed Prosthetic Leg</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Designed and 3D printed a prosthetic leg.
+                <!-- 14. MANNA Navigation Project -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-green-400">14.</span> MANNA Navigation Project</h3>
+                        <p class="text-xs text-green-400 font-medium mb-3 uppercase tracking-wider">Ongoing research &middot; Cranfield University</p>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Maritime Autonomous Navigation using Alternative Absolute Positioning. Developing star and sun-sensor based positioning for GNSS-denied environments with Unity simulation and multi-sensor fusion.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CAD</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">3D Printing</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Biomedical</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=peEL9-Y7MLA" target="_blank" rel="noopener" class="text-emerald-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Celestial Nav</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Unity</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Sensor Fusion</span>
                         </div>
                     </div>
-                </div>
-
-                <!-- Reverse Engineering -->
-                <div class="project-card group glass rounded-2xl overflow-hidden card-hover reveal flex flex-col">
-                    <div class="relative h-64 overflow-hidden bg-slate-800">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 opacity-60"></div>
-                        <img src="images/reverse-engineering.jpg" alt="Reverse Engineering" loading="lazy" class="project-image w-full h-full object-cover opacity-90">
-                        <div class="absolute top-4 right-4 z-20">
-                            <span class="px-3 py-1 bg-sky-600/80 backdrop-blur rounded-full text-xs font-medium">CAD</span>
+                    <div>
+                        <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&amp;q=80" alt="MANNA Navigation Project" loading="lazy" class="w-full h-full object-cover">
                         </div>
                     </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="font-display text-xl font-bold mb-2 group-hover:text-sky-400 transition">Reverse Engineering</h3>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Reverse engineering a physical part into a CAD model in SolidWorks.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CAD</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Reverse Engineering</span>
-                        </div>
-                        <div class="mt-auto flex items-center justify-between">
-                            <a href="https://www.youtube.com/watch?v=JoqXGIfPtzQ" target="_blank" rel="noopener" class="text-sky-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Watch Demo <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </a>
-                            
-                        </div>
                     </div>
-                </div>
+                </article>
 
             </div>
 
@@ -1025,6 +1012,20 @@
                     }
                 }
             );
+        });
+
+        // Play YouTube videos inside the page when a project thumbnail is clicked
+        document.querySelectorAll('.yt-lite').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.id}?autoplay=1&rel=0`;
+                iframe.title = btn.getAttribute('aria-label');
+                iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+                iframe.allowFullscreen = true;
+                iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                iframe.className = 'w-full aspect-video rounded-xl';
+                btn.replaceWith(iframe);
+            });
         });
 
         // Smooth scroll for navigation

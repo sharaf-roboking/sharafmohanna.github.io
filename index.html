@@ -156,8 +156,12 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden robot-grid">
         <canvas id="heroCanvas" class="hero-canvas"></canvas>
         
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 text-center">
             <div class="reveal">
+                <div class="relative w-36 h-36 md:w-44 md:h-44 mx-auto mb-8">
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 blur-md opacity-60"></div>
+                    <img src="images/profile.png" alt="Sharaf Mohanna" class="relative w-full h-full rounded-full object-cover border-4 border-slate-900 ring-2 ring-white/10">
+                </div>
                 <p class="text-blue-400 font-medium mb-4 tracking-widest text-sm uppercase">MSc Robotics • Cranfield University</p>
                 <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">
                     Robotics <span class="gradient-text">Engineer</span><br>
@@ -268,15 +272,52 @@
 
             <div class="space-y-10">
 
-                <!-- 1. Autonomous Mobile Robot for Aircraft Inspection -->
+                <!-- 1. MANNA: Unity-Based Maritime Simulation for Celestial Navigation -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-blue-400">1.</span> Autonomous Mobile Robot for Aircraft Inspection</h3>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-green-400">1.</span> MANNA: Unity-Based Maritime Simulation for Celestial Navigation</h3>
+                        <p class="text-xs text-green-400 font-medium mb-3 uppercase tracking-wider">Ongoing research &middot; Cranfield University</p>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Development of a realistic maritime simulation environment in the Unity game engine for autonomous ship navigation research. The platform models marine environmental conditions, vessel dynamics and onboard sensors, providing a configurable, realistic and repeatable environment for developing, testing and validating the celestial navigation algorithms I have developed.</p>
+                            <ul class="list-disc pl-5 space-y-1 text-sm text-gray-400">
+                                <li><strong class="text-gray-200">Maritime environment:</strong> realistic ocean waves and vessel floating behaviour, configurable wind, wave height and direction, and dynamic day/night cycles.</li>
+                                <li><strong class="text-gray-200">Dynamic celestial sky:</strong> star constellations and the Sun&rsquo;s elevation and position change with simulation time and the vessel&rsquo;s location.</li>
+                                <li><strong class="text-gray-200">Vessel dynamics:</strong> adjustable vessel size, mass and physical properties to study motion under different sea conditions.</li>
+                                <li><strong class="text-gray-200">Onboard sensors:</strong> IMU, inclinometer, camera and speed sensor, plus ground-truth logging of latitude, longitude, orientation and motion.</li>
+                                <li><strong class="text-gray-200">Algorithm validation:</strong> day and night experiments using Sun and star observations to evaluate celestial navigation performance against ground truth.</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Unity</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Celestial Navigation</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">IMU</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Sensor Fusion</span>
+                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Marine Robotics</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="yt-lite group/video relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800 block" data-id="vIn41xzUQoM" aria-label="Play video: MANNA: Unity-Based Maritime Simulation for Celestial Navigation">
+                            <img src="images/manna-simulation.jpg" alt="MANNA: Unity-Based Maritime Simulation for Celestial Navigation" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover/video:scale-105">
+                            <span class="absolute inset-0 bg-black/30 group-hover/video:bg-black/10 transition"></span>
+                            <span class="absolute inset-0 flex items-center justify-center">
+                                <span class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-green-600/90 text-white flex items-center justify-center shadow-2xl ring-4 ring-white/20 group-hover/video:scale-110 transition-transform"><svg class="w-10 h-10 md:w-12 md:h-12 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+
+                <!-- 2. Autonomous Mobile Robot for Aircraft Inspection -->
+                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-blue-400">2.</span> Autonomous Mobile Robot for Aircraft Inspection</h3>
                         <p class="text-xs text-blue-400 font-medium mb-3 uppercase tracking-wider">MSc Thesis &middot; Cranfield University</p>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Developed a ROS 2-based autonomous inspection robot for aircraft wings and stabilisers using the Husarion Panther UGV with a custom telescoping camera column. Integrated 3D LiDAR, 2D LiDAR and stereo vision for mapping and navigation in GPS-denied hangars. Implemented hybrid SLAM (RTAB-Map &amp; SLAM Toolbox) and Nav2 for autonomous path planning and obstacle avoidance, validated in Gazebo with accurate localisation, safe vertical inspection control and efficient defect imaging.
-                        </p>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Developed a ROS 2-based autonomous inspection robot for aircraft wings and stabilisers using the Husarion Panther UGV with a custom telescoping camera column. Integrated 3D LiDAR, 2D LiDAR and stereo vision for mapping and navigation in GPS-denied hangars. Implemented hybrid SLAM (RTAB-Map &amp; SLAM Toolbox) and Nav2 for autonomous path planning and obstacle avoidance, validated in Gazebo with accurate localisation, safe vertical inspection control and efficient defect imaging.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS 2</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SLAM</span>
@@ -298,15 +339,15 @@
                     </div>
                 </article>
 
-                <!-- 2. Generalised Anomaly Detection System -->
+                <!-- 3. Generalised Anomaly Detection System -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-purple-400">2.</span> Generalised Anomaly Detection System</h3>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-purple-400">3.</span> Generalised Anomaly Detection System</h3>
                         <p class="text-xs text-purple-400 font-medium mb-3 uppercase tracking-wider">Published at IEEE ICAC 2025</p>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Integrated real-time anomaly detection into a mobile robot to enhance public safety in dynamic environments such as shopping centres. Targets three anomalies: people who have fallen, abandoned bags and visible knives. The final pipeline combines YOLO-World v2 for open-vocabulary detection, YOLO-Pose for posture estimation and GPT-4V for contextual reasoning with JSON-formatted alerts.
-                        </p>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Integrated real-time anomaly detection into a mobile robot to enhance public safety in dynamic environments such as shopping centres. Targets three anomalies: people who have fallen, abandoned bags and visible knives. The final pipeline combines YOLO-World v2 for open-vocabulary detection, YOLO-Pose for posture estimation and GPT-4V for contextual reasoning with JSON-formatted alerts.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">YOLO-World</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">YOLO-Pose</span>
@@ -327,14 +368,14 @@
                     </div>
                 </article>
 
-                <!-- 3. Vision-Based Object Measurement System -->
+                <!-- 4. Vision-Based Object Measurement System -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-orange-400">3.</span> Vision-Based Object Measurement System</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            C++ and OpenCV system that detects and measures objects in real time with a standard camera, using a &pound;1 coin (23.43 mm) as a reference for automatic calibration. Converts pixel measurements into real-world units, removing the need for calipers or contact sensors, and is robust to varying lighting and object orientation for industrial quality control.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-orange-400">4.</span> Vision-Based Object Measurement System</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>C++ and OpenCV system that detects and measures objects in real time with a standard camera, using a &pound;1 coin (23.43 mm) as a reference for automatic calibration. Converts pixel measurements into real-world units, removing the need for calipers or contact sensors, and is robust to varying lighting and object orientation for industrial quality control.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">C++</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">OpenCV</span>
@@ -349,15 +390,15 @@
                     </div>
                 </article>
 
-                <!-- 4. Design, Implementation and Control of a 3D Printer -->
+                <!-- 5. Design, Implementation and Control of a 3D Printer -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-yellow-400">4.</span> Design, Implementation and Control of a 3D Printer</h3>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-yellow-400">5.</span> Design, Implementation and Control of a 3D Printer</h3>
                         <p class="text-xs text-yellow-400 font-medium mb-3 uppercase tracking-wider">BSc Final Year Project</p>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Designed, built and controlled a 3D printer from scratch using an Arduino Mega. Fine-tuned the mechanical components to improve accuracy and minimise vibration, and made significant modifications to the open-source Marlin firmware for high print quality. Supervised by Dr. Wafaa Batayneh and fully funded by the Center of Excellence for Innovative Projects at JUST.
-                        </p>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Designed, built and controlled a 3D printer from scratch using an Arduino Mega. Fine-tuned the mechanical components to improve accuracy and minimise vibration, and made significant modifications to the open-source Marlin firmware for high print quality. Supervised by Dr. Wafaa Batayneh and fully funded by the Center of Excellence for Innovative Projects at JUST.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Arduino</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Marlin</span>
@@ -377,15 +418,15 @@
                     </div>
                 </article>
 
-                <!-- 5. Camera Robot Project -->
+                <!-- 6. Camera Robot Project -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-pink-400">5.</span> Camera Robot Project</h3>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-pink-400">6.</span> Camera Robot Project</h3>
                         <p class="text-xs text-pink-400 font-medium mb-3 uppercase tracking-wider">The ADY</p>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Integrated a collaborative Universal Robot into a videography setup for high-quality visuals of food and consumer products. Programmed and operated the robot for smooth, precise motion, and designed the end-effector: detailed 3D models, SolidWorks simulations and selection of materials and manufacturing methods.
-                        </p>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Integrated a collaborative Universal Robot into a videography setup for high-quality visuals of food and consumer products. Programmed and operated the robot for smooth, precise motion, and designed the end-effector: detailed 3D models, SolidWorks simulations and selection of materials and manufacturing methods.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Universal Robots</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
@@ -405,14 +446,14 @@
                     </div>
                 </article>
 
-                <!-- 6. Automotive Engine Deburring System -->
+                <!-- 7. Automotive Engine Deburring System -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-red-400">6.</span> Automotive Engine Deburring System</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Designed an industrial robotic cell in ABB RobotStudio for deburring a V8 engine block, with the tool contacting the edges at a precise 45&deg; angle. Designed the custom deburring tool in SolidWorks and added a machine-vision inspection routine that checks deburred areas and reports potential defects.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-red-400">7.</span> Automotive Engine Deburring System</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Designed an industrial robotic cell in ABB RobotStudio for deburring a V8 engine block, with the tool contacting the edges at a precise 45&deg; angle. Designed the custom deburring tool in SolidWorks and added a machine-vision inspection routine that checks deburred areas and reports potential defects.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ABB RobotStudio</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
@@ -432,14 +473,14 @@
                     </div>
                 </article>
 
-                <!-- 7. Aeroengine Case Assembly Cell -->
+                <!-- 8. Aeroengine Case Assembly Cell -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-cyan-400">7.</span> Aeroengine Case Assembly Cell</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Automated the assembly of a simplified aircraft engine case in ABB RobotStudio: placing the upper case onto the lower case and inserting bolts into 48 holes, each secured with an M8 nut. Engineered two end-effectors, one for handling the heavy case components and one for precise bolt insertion and nut fastening.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-cyan-400">8.</span> Aeroengine Case Assembly Cell</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Automated the assembly of a simplified aircraft engine case in ABB RobotStudio: placing the upper case onto the lower case and inserting bolts into 48 holes, each secured with an M8 nut. Engineered two end-effectors, one for handling the heavy case components and one for precise bolt insertion and nut fastening.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ABB RobotStudio</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">End-Effector Design</span>
@@ -459,14 +500,14 @@
                     </div>
                 </article>
 
-                <!-- 8. Control UR5 with Joystick -->
+                <!-- 9. Control UR5 with Joystick -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-blue-400">8.</span> Control UR5 with Joystick</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Built a ROS 2 package to control the UR5 robot arm using an Xbox joystick.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-blue-400">9.</span> Control UR5 with Joystick</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Built a ROS 2 package to control the UR5 robot arm using an Xbox joystick.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS 2</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">UR5</span>
@@ -486,15 +527,15 @@
                     </div>
                 </article>
 
-                <!-- 9. VSLAM with a Monocular Camera -->
+                <!-- 10. VSLAM with a Monocular Camera -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-indigo-400">9.</span> VSLAM with a Monocular Camera</h3>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-indigo-400">10.</span> VSLAM with a Monocular Camera</h3>
                         <p class="text-xs text-indigo-400 font-medium mb-3 uppercase tracking-wider">Cranfield Rover Team</p>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            As a member of the Rover Team at Cranfield University, contributed to the design of the sand-pit test environment and developed a visual odometry system for the rover using a monocular (2D) camera.
-                        </p>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>As a member of the Rover Team at Cranfield University, contributed to the design of the sand-pit test environment and developed a visual odometry system for the rover using a monocular (2D) camera.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ORB-SLAM3</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Visual Odometry</span>
@@ -514,14 +555,14 @@
                     </div>
                 </article>
 
-                <!-- 10. ROS-Controlled 3D-Printed Robotic Arm with Arduino -->
+                <!-- 11. ROS-Controlled 3D-Printed Robotic Arm with Arduino -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-teal-400">10.</span> ROS-Controlled 3D-Printed Robotic Arm with Arduino</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Low-cost robotic arm built entirely from custom 3D-printed parts and servo motors. A ROS node sends joint-angle commands to an Arduino over serial, which drives each motor precisely for smooth, coordinated motion, a foundation for robotic 3D printing, motion planning and education.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-teal-400">11.</span> ROS-Controlled 3D-Printed Robotic Arm with Arduino</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Low-cost robotic arm built entirely from custom 3D-printed parts and servo motors. A ROS node sends joint-angle commands to an Arduino over serial, which drives each motor precisely for smooth, coordinated motion, a foundation for robotic 3D printing, motion planning and education.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">ROS</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Arduino</span>
@@ -542,14 +583,14 @@
                     </div>
                 </article>
 
-                <!-- 11. Design &amp; 3D-Printed Prosthetic Leg -->
+                <!-- 12. Design &amp; 3D-Printed Prosthetic Leg -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-emerald-400">11.</span> Design &amp; 3D-Printed Prosthetic Leg</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Designed and 3D printed a prosthetic leg.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-emerald-400">12.</span> Design &amp; 3D-Printed Prosthetic Leg</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Designed and 3D printed a prosthetic leg.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CAD</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">3D Printing</span>
@@ -568,14 +609,14 @@
                     </div>
                 </article>
 
-                <!-- 12. Reverse Engineering -->
+                <!-- 13. Reverse Engineering -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-sky-400">12.</span> Reverse Engineering</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Reverse engineering a physical part into a CAD model in SolidWorks.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-sky-400">13.</span> Reverse Engineering</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Reverse engineering a physical part into a CAD model in SolidWorks.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">SolidWorks</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CAD</span>
@@ -594,14 +635,14 @@
                     </div>
                 </article>
 
-                <!-- 13. Design, Build and Control of a CNC -->
+                <!-- 14. Design, Build and Control of a CNC -->
                 <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
                     <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-rose-400">13.</span> Design, Build and Control of a CNC</h3>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Went through multiple design and build stages to complete a fully functional CNC machine controlled via Arduino.
-                        </p>
+                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-rose-400">14.</span> Design, Build and Control of a CNC</h3>
+                        <div class="text-gray-300 leading-relaxed mb-4 space-y-3">
+                            <p>Went through multiple design and build stages to complete a fully functional CNC machine controlled via Arduino.</p>
+                        </div>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Arduino</span>
                             <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">CNC</span>
@@ -617,29 +658,6 @@
                             </span>
                             <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/60 text-xs font-medium">&#9654; Watch Video</span>
                         </button>
-                    </div>
-                    </div>
-                </article>
-
-                <!-- 14. MANNA Navigation Project -->
-                <article class="project-card glass rounded-2xl p-6 md:p-8 border border-white/10 reveal">
-                    <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="font-display text-2xl font-bold mb-2"><span class="text-green-400">14.</span> MANNA Navigation Project</h3>
-                        <p class="text-xs text-green-400 font-medium mb-3 uppercase tracking-wider">Ongoing research &middot; Cranfield University</p>
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Maritime Autonomous Navigation using Alternative Absolute Positioning. Developing star and sun-sensor based positioning for GNSS-denied environments with Unity simulation and multi-sensor fusion.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Celestial Nav</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Unity</span>
-                            <span class="text-xs px-2 py-1 bg-white/5 rounded text-gray-300">Sensor Fusion</span>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-800">
-                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&amp;q=80" alt="MANNA Navigation Project" loading="lazy" class="w-full h-full object-cover">
-                        </div>
                     </div>
                     </div>
                 </article>
